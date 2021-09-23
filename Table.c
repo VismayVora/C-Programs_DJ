@@ -1,13 +1,17 @@
 #include <stdio.h>
 
-int main(void) {
-  for(int i = 1;i <= 10;i++)
-  {
-    for(int j = 2;j <= 10;j++)
+int main()
+{
+    int n,j,i =1;
+    printf("Enter the range:");
+    scanf("%d", &n);
+    for ( ; i<= 10; i++)
     {
-      printf("%d\t",i*j);
+        for(j =2; j<= n; j++)
+        {
+            printf("%d\t",j*i);
+        }
+       printf("\n");
     }
-    printf("\n");
-  }
-  return 0;
+     return 0;
 }
